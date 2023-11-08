@@ -1,0 +1,68 @@
+<?php
+    //id=193111580&token=SaGA&programa=010002
+    //id=174685355&token=SaGA&programa=120401
+    $url = "http://localhost:8080/CappAlumno/inicio/inicio.xhtml"
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema UC</title>
+    <link rel="stylesheet" href="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/css/uc-kitdigital.css"/>
+</head>
+<body>
+
+    <h1 class="my-20 mx-20">Prueba de Integración Avance Curricular</h1>
+    <p class="my-10 mx-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex repellendus numquam error dicta, maxime blanditiis saepe cupiditate deleniti ullam distinctio voluptatem molestias minus minima consectetur animi adipisci nemo laudantium?</p>
+    <script src="https://kit-digital-uc-prod.s3.amazonaws.com/uc-kitdigital/js/uc-kitdigital.js"></script>
+
+    <hr class="uc-hr my-20 mx-20"/>
+
+    <table class="uc-table mx-20 my-10">
+        <thead>
+          <tr>
+            <th>Rut</th>
+            <th>Nombre</th>
+            <th>Programa</th>
+            <th>Redirección</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>19.311.158-0</strong></td>
+            <td>Z</td>
+            <td>010002</td>
+            <td>
+                <form action="http://localhost:8080/CappAlumno/inicio/inicio.xhtml" method="post">
+                    <input type="hidden" name="id" value="193111580"/>
+                    <input type="hidden" name="token" value="SaGA"/>
+                    <input type="hidden" name="programa" value="010002"/>
+                    <button class="uc-btn btn-primary" style="width: 250px; display: flex; justify-content: space-between;" type="submit">Ir a Avance Curricular <i class="uc-icon icon-shape--rounded">arrow_forward</i></button>
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>17.468.535-5</strong></td>
+            <td>d</td>
+            <td>120401</td>
+            <td>
+                <form action="http://localhost:8080/CappAlumno/inicio/inicio.xhtml" method="post">
+                    <input type="hidden" name="id" value="193111580"/>
+                    <input type="hidden" name="token" value="SaGA"/>
+                    <input type="hidden" name="programa" value="010002"/>
+                    <button class="uc-btn btn-primary" style="width: 250px; display: flex; justify-content: space-between;" type="submit">Ir a Avance Curricular <i class="uc-icon icon-shape--rounded">arrow_forward</i></button>
+                </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <form action="http://localhost:8080/CappAlumno/inicio/inicio.xhtml" method="post" style="margin-left: 20px; margin-top: 20px;">
+        <input type="text" name="id" value="193111580"/>
+        <input type="hidden" name="token" value="SaGA"/>
+        <input type="text" name="programa" value="010002"/>
+        <button class="uc-btn btn-primary" style="width: 250px; display: flex; justify-content: space-between;" type="submit">Ir a Avance Curricular <i class="uc-icon icon-shape--rounded">arrow_forward</i></button>
+    </form>
+
+</body>
+</html>
